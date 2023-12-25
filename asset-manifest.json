@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ncities_game/static/css/main.f3eacaaf.css",
+    "main.js": "/ncities_game/static/js/main.5482228b.js",
+    "static/js/787.413896a9.chunk.js": "/ncities_game/static/js/787.413896a9.chunk.js",
+    "index.html": "/ncities_game/index.html",
+    "main.f3eacaaf.css.map": "/ncities_game/static/css/main.f3eacaaf.css.map",
+    "main.5482228b.js.map": "/ncities_game/static/js/main.5482228b.js.map",
+    "787.413896a9.chunk.js.map": "/ncities_game/static/js/787.413896a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3eacaaf.css",
+    "static/js/main.5482228b.js"
+  ]
+}
