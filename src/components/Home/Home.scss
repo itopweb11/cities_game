@@ -1,0 +1,40 @@
+.home {
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #F4F4F5;
+    padding: 17px 0;
+
+    p {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+
+    p {
+      color: var(--gray-700, #3F3F46);
+      font-size: 14px;
+    }
+
+    ul {
+      margin-left: 27px;
+
+      li {
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--gray-700, #3F3F46);
+
+        &::marker {
+          margin-left: 1px;
+        }
+      }
+    }
+  }
+}

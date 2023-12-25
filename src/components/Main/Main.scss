@@ -1,0 +1,133 @@
+.main {
+  width: 100%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 16px;
+
+    p:first-child {
+      font-size: 16px;
+    }
+
+    p:last-child {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  &__content {
+    height: 320px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+
+    scrollbar-width: thin; /* Для Firefox */
+    scrollbar-color: darkgray lightgray; /* Для Firefox */
+
+   /* !* Для WebKit (Chrome, Safari) *!
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #8b5cf6;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #dcdcdc;
+    }*/
+
+    p{
+      margin: 50px 0;
+    }
+
+    p:nth-child(even) {
+      color: var(--gray-700, #3F3F46);
+      position: absolute;
+      left: 16px;
+      top: 0;
+      margin: 20px 0;
+      padding: 6px 16px;
+      border-radius: 12px 12px 12px 0px;
+      background: var(--violet-50, #F5F3FF)
+    }
+    p:nth-child(odd) {
+      color: white;
+      position: absolute;
+      right: 16px;
+      top: 0;
+      font-size: 16px;
+      padding: 6px 12px;
+      margin: 20px 0;
+      border-radius: 12px 12px 0 12px;
+      background: var(--violet-500, #8B5CF6);
+    }
+
+    &_desc {
+      width: 100%;
+      font-size: 14px;
+      margin-top: 140px!important;
+      text-align: center!important;
+      color: var(--gray-400, #A1A1AA)!important;
+      padding: 0!important;
+      background: none!important;
+    }
+
+    &_numberOfCities {
+      color: var(--gray-400, #A1A1AA);
+      text-align: center;
+      font-size: 14px;
+      margin: 16px 0;
+    }
+  }
+
+  &__control {
+    max-width: 544px;
+    height: 48px;
+    margin: 0 12px 15px 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    background: var(--cool-gray-100, #F3F4F6);
+
+    input {
+      max-width: 480px;
+      width: 100%;
+      height: 35px;
+      border-radius: 6px;
+      outline: none;
+      padding-left: 5px;
+      border: none;
+      background: var(--cool-gray-100, #F3F4F6);
+      color: var(--gray-700, #3F3F46);
+      font-size: 16px;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  span {
+    display: block;
+    margin: 10px 16px;
+    color: red;
+    font-size: 12px;
+  }
+}
+
+//media
+@media (max-width: 450px) {
+  .main__content {
+    height: 71vh;
+  }
+}
+
+@media (max-width: 350px) {
+  span {
+    font-size: 10px!important;
+  }
+}
