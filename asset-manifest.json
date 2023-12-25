@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cities_game/static/css/main.f3eacaaf.css",
-    "main.js": "/cities_game/static/js/main.d1b76b9d.js",
+    "main.css": "/cities_game/static/css/main.b90e92d0.css",
+    "main.js": "/cities_game/static/js/main.2b84fc23.js",
     "static/js/787.413896a9.chunk.js": "/cities_game/static/js/787.413896a9.chunk.js",
     "index.html": "/cities_game/index.html",
-    "main.f3eacaaf.css.map": "/cities_game/static/css/main.f3eacaaf.css.map",
-    "main.d1b76b9d.js.map": "/cities_game/static/js/main.d1b76b9d.js.map",
+    "main.b90e92d0.css.map": "/cities_game/static/css/main.b90e92d0.css.map",
+    "main.2b84fc23.js.map": "/cities_game/static/js/main.2b84fc23.js.map",
     "787.413896a9.chunk.js.map": "/cities_game/static/js/787.413896a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3eacaaf.css",
-    "static/js/main.d1b76b9d.js"
+    "static/css/main.b90e92d0.css",
+    "static/js/main.2b84fc23.js"
   ]
 }
