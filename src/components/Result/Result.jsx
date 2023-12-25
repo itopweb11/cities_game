@@ -2,7 +2,7 @@ import React from 'react';
 import Button from "../Button/Button";
 import './Result.scss'; // Подключение стилей компонента
 
-const Result = ({setSeconds, setInputValue, textArray, setTextArray, isDivisibleByTwo, setProgress}) => {
+const Result = ({setSeconds, textArray, setTextArray, isDivisibleByTwo, setProgress}) => {
 const f = () => {
     if (textArray.length >= 1) {
         setTextArray([]);
@@ -10,7 +10,6 @@ const f = () => {
         setProgress(576)
         setSeconds(120)
     }
-    setInputValue('');
 }
 
     return (

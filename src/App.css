@@ -14,30 +14,25 @@
   margin: 0 20px;
   border-radius: 16px;
   background: var(--white, #FFF);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
-
-//media
 
 @media (max-width: 495px) {
   .main__control input {
-    font-size: 13px!important;
+    font-size: 13px !important;
   }
 }
-
 @media (max-width: 450px) {
   .app {
     height: 95vh;
   }
 }
-
 @media (max-width: 420px) {
   .main__control input {
-    font-size: 10px!important;
+    font-size: 10px !important;
     font-weight: 600;
   }
 }
-
 @media (max-width: 390px) {
   .app {
     height: 97vh;
@@ -45,3 +40,4 @@
   }
 }
 
+/*# sourceMappingURL=App.css.map */

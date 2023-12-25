@@ -19,10 +19,8 @@ const Main = () => {
     const [firstElement, setFirstElement] = useState(''); // Первая буква введенно��о слова
     const [matchingLetters, setMatchingLetters] = useState(false); // Проверка совпадения букв
     const [isDivisibleByTwo, setIsDivisibleByTwo] = useState(true); // Проверка совпадения букв
-    const [resultPage, setResultPage] = useState(false);
     const [error, setError] = useState(''); // Ошибка при вводе
     const [textArray, setTextArray] = useState([]); // Массив введенных городов
-    const [inputValue, setInputValue] = useState('');
 
 
 
@@ -58,7 +56,6 @@ const Main = () => {
             setMatchingLetters(lastElement.toUpperCase() === firstElement ? true : false) :
             setMatchingLetters(true);
 
-        setInputValue(event.target.value);
     };
 
 
@@ -177,7 +174,7 @@ const Main = () => {
 
     // Визуализация компонента
     return (
-        seconds === 0 ? <Result setInputValue={setInputValue} setSeconds={setSeconds} setProgress={setProgress} textArray={textArray} isDivisibleByTwo={isDivisibleByTwo} setTextArray={setTextArray}/>
+        seconds === 0 ? <Result setSeconds={setSeconds} setProgress={setProgress} textArray={textArray} isDivisibleByTwo={isDivisibleByTwo} setTextArray={setTextArray}/>
         : <div className="main">
             <div className="main__header">
                 { isDivisibleByTwo ? <p>Сейчас ваша очередь</p> : <p>Сейчас очередь соперника</p> }
@@ -195,9 +192,7 @@ const Main = () => {
                     <p key={index} style={{ marginTop: `${50 * (index + 1)}px` }}>{text}</p>
                 ))}
 
-                {textArray.length < 1 ? <p className="main__content_desc">Первый участник вспоминает города...</p>
-                 : null
-                }
+                {textArray.length < 1 ? <p className="main__content_desc">Первый участник вспоминает города...</p> : null}
             </div>
             {
                 textArray.length >= 1 ?
